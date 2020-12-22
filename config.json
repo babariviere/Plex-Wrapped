@@ -1,6 +1,15 @@
-{ "plexpy_apikey"  :    "TAUTULLI APIKEY",
-  "ip"             :    "TAUTILLI IP",
-  "plexpy_port"    :    "TAUTULLI PORT",
-  "http"           :    "80",
-  "https"          :    "443"
+{ "tautulli_apikey"       :    "",
+  "tautulli_ip"           :    "",
+  "tautulli_port"         :    "",
+  "ssl"                   :    false,
+  "tautulli_root"         :    "",
+  "library_id_movies"     :    "1",
+  "library_id_shows"      :    "2",
+  "wrapped_start"         :    "1577836800",
+  "wrapped_end"           :    "1609459199",
+  "get_user_movie_stats"  :    true,
+  "get_user_show_stats"   :    true,
+  "get_user_show_buddy"   :    true,
+  "get_year_stats"        :    true,
+  "tautulli_length"       :    50000
 }
