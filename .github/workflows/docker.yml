@@ -1,5 +1,4 @@
 name: Build docker image
-environment: dockerhub
 
 on:
   push:
@@ -8,6 +7,7 @@ on:
 
 jobs:
   main:
+    environment: dockerhub
     runs-on: ubuntu-latest
     steps:
       -
