@@ -1,0 +1,25 @@
+version: '3'
+services:
+  tautulli:
+    image: tautulli/tautulli
+    restart: unless-stopped
+    volumes:
+      - ./tautulli/config:/config
+    environment:
+      - PUID=501
+      - PGID=20
+      - TZ=Europe/Paris
+    ports:
+      - 8181:8181
+
+  plexyear:
+    build: .
+    ports:
+      - 8282:80
+    environment:
+      - PUID=501
+      - PGID=20
+      - TZ=Europe/Paris
+    restart: unless-stopped
+    volumes:
+      - ./config.json:/var/www/html/config.json
