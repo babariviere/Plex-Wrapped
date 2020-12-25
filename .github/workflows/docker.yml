@@ -3,7 +3,7 @@ environment: dockerhub
 
 on:
   push:
-    branches: master
+    branches: main
   workflow_dispatch: # on button click
 
 jobs:
